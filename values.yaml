@@ -11,7 +11,7 @@ replicaCount: 1
 
 image:
   repository: gogs/gogs
-  tag: 0.11.86
+  tag: 0.12.3
   pullPolicy: IfNotPresent
 
 service:
@@ -282,6 +282,13 @@ service:
     ## Time duration to check if archive should be cleaned, e.g. 24h
     ##
     cronRepoArchiveCleanupOlderThan: 24h
+
+    ## Prometheus Monitoring settings
+    ##
+    enableMonitoring: true 
+    enableMonitoringAuth: false
+    enableMonitoringAuthUsername
+    enableMonitoringAuthPassword  
 
   ## Ingress configuration.
   ## ref: https://kubernetes.io/docs/user-guide/ingress/
