@@ -18,7 +18,7 @@ chart and their default values.
 | `image.tag`                      | Gogs image tag                                               | `0.11.86`                                                  |
 | `image.pullPolicy`               | Gogs image pull policy                                       | `Always` if `imageTag` is `latest`, else `IfNotPresent`    |
 | `postgresql.install`             | Weather or not to install PostgreSQL dependency              | `true`                                                     |
-| `postgresql.postgresHost`        | PostgreSQL host (if `postgresql.install == false`)           | `nil`                                                      |
+| `postgresql.postgresHost`        | PostgreSQL host                                              | `nil`                                                      |
 | `postgresql.postgresUser`        | PostgreSQL User to create                                    | `gogs`                                                     |
 | `postgresql.postgresPassword`    | PostgreSQL Password for the new user                         | `gogs`                                                     |
 | `postgresql.postgresDatabase`    | PostgreSQL Database to create                                | `gogs`                                                     |
