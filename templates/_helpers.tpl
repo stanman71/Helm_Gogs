@@ -38,14 +38,12 @@ Determine database user based on use of postgresql dependency.
 {{- define "gogs.database.host" -}}
 {{- .Values.service.gogs.databaseHost | quote -}}
 {{- end -}}
-{{- end -}}
 
 {{/*
 Determine database user based on use of postgresql dependency.
 */}}
 {{- define "gogs.database.user" -}}
 {{- .Values.service.gogs.databaseUser | quote -}}
-{{- end -}}
 {{- end -}}
 
 {{/*
@@ -54,7 +52,6 @@ Determine database password based on use of postgresql dependency.
 {{- define "gogs.database.password" -}}
 {{- .Values.service.gogs.databasePassword | quote -}}
 {{- end -}}
-{{- end -}}
 
 {{/*
 Determine database name based on use of postgresql dependency.
@@ -62,12 +59,10 @@ Determine database name based on use of postgresql dependency.
 {{- define "gogs.database.name" -}}
 {{- .Values.service.gogs.databaseName | quote -}}
 {{- end -}}
-{{- end -}}
 
 {{/*
 Determine database SSL mode based on use of postgresql dependency.
 */}}
 {{- define "gogs.database.ssl_mode" -}}
 {{- .Values.service.gogs.databaseSSLMode | quote -}}
-{{- end -}}
 {{- end -}}
