@@ -104,8 +104,15 @@ data:
     SCHEDULE = {{ .Values.service.gogs.cronRepoArchiveCleanupSchedule }}
     OLDER_THAN = {{ .Values.service.gogs.cronRepoArchiveCleanupOlderThan }}
 
+    [prometheus] 
+    ENABLED = {{ .Values.service.gogs.enableMonitoring }} 
+    ENABLE_BASIC_AUTH = {{ .Values.service.gogs.enableMonitoringAuth }}  
+    BASIC_AUTH_USERNAME = {{ .Values.service.gogs.enableMonitoringAuthUsername }}  
+    BASIC_AUTH_PASSWORD = {{ .Values.service.gogs.enableMonitoringAuthPassword }}  
+
     [other]
     SHOW_FOOTER_BRANDING = {{ .Values.service.gogs.otherShowFooterBranding }}
     SHOW_FOOTER_VERSION = {{ .Values.service.gogs.otherShowFooterVersion }}
     SHOW_FOOTER_TEMPLATE_LOAD_TIME = {{ .Values.service.gogs.otherShowFooterTemplateLoadTime }}
+
 
