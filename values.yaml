@@ -285,10 +285,10 @@ service:
 
     ## Prometheus Monitoring settings
     ##
-    enableMonitoring: false 
-    enableMonitoringAuth: false
-    enableMonitoringAuthUsername: 
-    enableMonitoringAuthPassword:   
+    monitoringEnable: false 
+    monitoringAuth: false
+    monitoringUsername: 
+    monitoringPassword:   
 
   ## Ingress configuration.
   ## ref: https://kubernetes.io/docs/user-guide/ingress/
