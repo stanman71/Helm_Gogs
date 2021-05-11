@@ -26,5 +26,11 @@ spec:
     nodePort: {{ .Values.service.sshNodePort | int }}
 {{- end }}
     name: {{ default "gogs" .Values.service.nameOverride }}-ssh
+{{- if .Values.metrics.enabled }}   
+  - name: metrics
+    port: 9188
+    protocol: TCP
+    targetPort: metrics     
+{{- end }}   
   selector:
     app: {{ template "gogs.fullname" . }}
