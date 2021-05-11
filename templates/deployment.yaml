@@ -44,9 +44,11 @@ spec:
           ports:
             - containerPort: 3000
             - containerPort: 22
+          {{- if .Values.metrics.enabled }}   
             - containerPort: 9188
               name: metrics
               protocol: TCP
+          {{- end }}
           livenessProbe:
             initialDelaySeconds: 180
             httpGet:
