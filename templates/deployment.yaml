@@ -44,6 +44,9 @@ spec:
           ports:
             - containerPort: 3000
             - containerPort: 22
+            - containerPort: 9188
+              name: metrics
+              protocol: TCP
           livenessProbe:
             initialDelaySeconds: 180
             httpGet:
