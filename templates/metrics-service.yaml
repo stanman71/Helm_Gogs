@@ -19,7 +19,7 @@ spec:
   type: ClusterIP
   ports:
     - name: metrics
-      port: 9187
+      port: 9188
       targetPort: metrics
   selector: {{- include "common.labels.matchLabels" . | nindent 4 }}
     app.kubernetes.io/component: gogs
